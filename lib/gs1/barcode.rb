@@ -4,6 +4,7 @@ require 'gs1/barcode/errors'
 
 require 'gs1/barcode/base'
 require 'gs1/barcode/healthcare'
+require 'gs1/barcode/meat'
 require 'gs1/barcode/segment'
 require 'gs1/barcode/tokenizer'
 

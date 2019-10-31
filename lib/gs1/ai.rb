@@ -148,6 +148,8 @@ module GS1
     # Country subdivision Of origin
     ORIGIN_SUBDIVISION = '427'.freeze
 
+    WEIGHT_POUNDS = '3202'.freeze
+
     #
     # GS1 Application Identifiers starting with digit 7
 
