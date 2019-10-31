@@ -36,5 +36,17 @@ RSpec.describe GS1::Barcode::Meat do
         expect(subject.weight_pounds).to eq(GS1::WeightPounds.new('000125'))
       end
     end
+
+    context "01900000007722381119061232020005482130031013" do
+      let(:data) { "01900000007722381119061232020005482130031013" }
+
+      it 'sets all attributes' do
+        expect(subject.gtin).to eq(GS1::GTIN.new('90000000772238'))
+        expect(subject.production_date).to eq(GS1::ProductionDate.new('190612'))
+        expect(subject.serial_number).to eq(GS1::SerialNumber.new('30031013'))
+        expect(subject.weight_pounds).to eq(GS1::WeightPounds.new('000548'))
+        expect(subject.gtin.to_gtin_14).to be == ""
+      end
+    end
   end
 end
